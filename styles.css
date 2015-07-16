@@ -1,0 +1,96 @@
+
+
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  font-size: 18px;
+}
+body {
+  margin: 0;
+  font-family: Helvetica;
+}
+.post {
+}
+
+.post__header {
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #00000;
+  color: #FFF;
+  background-image: url("zombie_cat.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: fixed;
+
+}
+.post__headerNav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.post__headerNav > li {
+  display: inline-block;
+}
+.post__headerNav > li:after {
+  content: "-";
+}
+.post__headerNav > li:last-of-type:after {
+  content: none;
+}
+.post__headerNav > li > a {
+  color: inherit;
+  text-decoration: none;
+}
+.post__content {
+  width: 50%;
+  margin-left: 50%;
+  min-height: 200px;
+  padding: 40px;
+  padding-top: 0;
+  line-height: 27px;
+  color: #6D6D6D;
+}
+
+#pgraph {
+
+  margin-top: 0;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .post__header {
+    position: inherit;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00000;
+    color: #00000;
+    height: 450px;
+    background-size: cover;
+
+  }
+
+  .post__content {
+    width: 100%;
+    margin: 8px;
+    padding: 0px;
+    color: #6D6D6D;
+    text-align: left;
+    height: auto;
+  }
+
+
+
+
+
+}
